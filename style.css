@@ -1,0 +1,1710 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Regular'), url('./Fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .header-main .desktop-nav {
+    display: none;
+}
+
+header .header-main .mobile-header-nav {
+    display: none;
+    position: absolute;
+    top: 40px;
+    z-index: 1;
+    width: 100%;
+}
+
+header .header-main .mobile-header-nav .top-nav ul li.dropdown a,
+header .header-main .mobile-header-nav .top-nav ul a:hover {
+    text-decoration: none;
+}
+
+header .header-main .mobile-header-nav .top-nav {
+    min-height: 50px;
+}
+
+header .header-main .mobile-header-nav .top-nav ul.Fourth li ul li ul li p {
+    text-align: center;
+    color: #fff;
+}
+
+header .header-main .mobile-header-nav .top-nav ul li ul {
+    background-color: #1f1e1f;
+    list-style: none;
+
+}
+
+header .header-main .mobile-header-nav .top-nav ul {
+    background-color: #575153;
+    list-style: none;
+}
+
+header .header-main .mobile-header-nav .top-nav ul li {
+    display: inline-block;
+}
+
+header .header-main .mobile-header-nav .top-nav ul li a {
+    display: block;
+    color: #f9f9f9;
+    padding: 10px 20px;
+}
+
+header .header-main .mobile-header-nav .top-nav ul li a:hover {
+    background-color: #317d87;
+    color: #fff;
+}
+
+/* Dropdown */
+header .header-main .mobile-header-nav .top-nav ul li.dropdown {
+    position: relative;
+}
+
+header .header-main .mobile-header-nav .top-nav ul li.dropdown ul.dropdown-menu {
+    position: absolute;
+    min-width: 80px;
+}
+
+header .header-main .mobile-header-nav .top-nav ul li.dropdown ul.dropdown-menu li {
+    display: block !important;
+    white-space: nowrap;
+}
+
+/* Sub Dropdown */
+header .header-main .mobile-header-nav .top-nav ul li.dropdown ul.dropdown-menu ul.dropdown-menu {
+    left: 100%;
+    top: 0;
+    background-color: #f00 !important;
+}
+
+/* Display none by Default */
+header .header-main .mobile-header-nav .top-nav ul li.dropdown ul.dropdown-menu {
+    display: none;
+}
+
+/* Header */
+header .header-main .mobile-header .mobile-nav,
+header .header-main .mobile-header .mobile-nav .cart,
+header .header-main .mobile-header .mobile-nav .cart span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+header .header-main .mobile-header .container {
+    padding: 5px;
+}
+
+header .header-main .mobile-header .mobile-nav .bars a .fa-ellipsis-vertical {
+    color: #000;
+    font-size: 15px;
+    border: 1px solid #000;
+    padding: 7px 10px;
+    border-radius: 6px 2px;
+}
+
+header .header-main .mobile-header .mobile-nav .logo a img {
+    width: 100%;
+}
+
+header .header-main .mobile-header .mobile-nav .main {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+header .header-main .mobile-header .mobile-nav .search a .fa-magnifying-glass {
+    font-size: 15px;
+    color: #000;
+}
+
+header .header-main .mobile-header .mobile-nav .cart a .fa-cart-shopping {
+    color: #000;
+    font-size: 15px;
+}
+
+header .header-main .mobile-header .mobile-nav .cart form select {
+    border: none;
+    font-size: 15px;
+}
+
+header .header-main .bg img {
+    width: 100%;
+    display: flex;
+}
+
+header .header-main {
+    position: relative;
+}
+
+header .header-main .searchbar {
+    position: absolute;
+    width: 100%;
+    background-color: #575153;
+    display: none;
+    z-index: 2;
+    top: 39px;
+}
+
+header .header-main .searchbar form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10px; */
+    padding: 10px 0;
+}
+
+header .header-main .searchbar form input {
+    padding: 7px 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16.36px;
+    border: 2px solid #00c8c8;
+    border-right: none;
+    border-radius: 14px 0px 0px 14px;
+}
+
+header .header-main .searchbar form button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16.36px;
+    padding: 7px 10px;
+    background: #00c8c8;
+    color: #fff;
+    border: none;
+    border: 2px solid #00c8c8;
+    border-radius: 0px 14px 14px 0px;
+}
+
+/* Tabs */
+/* .container{
+    width: 700px;
+    margin: 0 auto;
+} */
+
+.popular-menu-main {
+    margin: 45px 0;
+}
+
+.popular-menu-main .popular-menu .tabs {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    background: #333333;
+    display: flex;
+    flex-direction: column;
+}
+
+.popular-menu-main .popular-menu .tabs li {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 5px 20px 5px 13px;
+    cursor: pointer;
+    font-size: 1.2em;
+    line-height: 2em;
+    color: #FFF;
+}
+
+.popular-menu-main .popular-menu .tabs li:hover {
+    color: #00c8c8;
+}
+
+.popular-menu-main .popular-menu .tabs li.current {
+    color: #00c8c8
+}
+
+.popular-menu-main .popular-menu .tab-content {
+    display: none;
+    padding: 15px;
+    line-height: 1.4;
+}
+.popular-menu-main .popular-menu #tab-3 {
+    padding-left: 35px;
+}
+
+.popular-menu-main .popular-menu .tab-content.current {
+    display: inherit;
+}
+
+.popular-menu-main .popular-menu .tab-content .popular-main .pupular .top .left img,
+.popular-menu-main .popular-menu .tab-content .popular-main .pupular .top .right img,
+.popular-menu-main .popular-menu .tab-content .popular-main .pupular .bottom img,
+.popular-menu-main .popular-menu .tab-content .popular-main .right .top img,
+.popular-menu-main .popular-menu .tab-content .popular-main .right .bottom .left img,
+.popular-menu-main .popular-menu .tab-content .popular-main .right .bottom .right img {
+    width: 100%;
+    display: flex;
+}
+
+.popular-menu-main .popular-menu .tab-content .popular-main .pupular .top .left,
+.popular-menu-main .popular-menu .tab-content .popular-main .pupular .top .right,
+.popular-menu-main .popular-menu .tab-content .popular-main .pupular .bottom,
+.popular-menu-main .popular-menu .tab-content .popular-main .right .top,
+.popular-menu-main .popular-menu .tab-content .popular-main .right .bottom .left,
+.popular-menu-main .popular-menu .tab-content .popular-main .right .bottom .right {
+    position: relative;
+}
+
+.popular-menu-main .popular-menu .tab-content .popular-main .pupular .top .left .text,
+.popular-menu-main .popular-menu .tab-content .popular-main .pupular .top .right .text,
+.popular-menu-main .popular-menu .tab-content .popular-main .pupular .bottom .text,
+.popular-menu-main .popular-menu .tab-content .popular-main .right .top .text,
+.popular-menu-main .popular-menu .tab-content .popular-main .right .bottom .left .text,
+.popular-menu-main .popular-menu .tab-content .popular-main .right .bottom .right .text {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+}
+
+.popular-menu-main .popular-menu .tab-content .popular-main .pupular .top .left .text span,
+.popular-menu-main .popular-menu .tab-content .popular-main .pupular .top .right .text span,
+.popular-menu-main .popular-menu .tab-content .popular-main .pupular .bottom .text span,
+.popular-menu-main .popular-menu .tab-content .popular-main .right .top .text span,
+.popular-menu-main .popular-menu .tab-content .popular-main .right .bottom .left .text span,
+.popular-menu-main .popular-menu .tab-content .popular-main .right .bottom .right .text span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #9a9a9a;
+    font-size: 19.67px;
+}
+
+.popular-menu-main .popular-menu .tab-content .popular-main,
+.popular-menu-main .popular-menu .tab-content .popular-main .pupular,
+.popular-menu-main .popular-menu .tab-content .popular-main .pupular .top,
+.popular-menu-main .popular-menu .tab-content .popular-main .right,
+.popular-menu-main .popular-menu .tab-content .popular-main .right .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.popular-menu-main .left .hover{
+    display: none;
+}
+
+.popular-menu-main .left img:hover .popular-menu-main .left .hover{
+    display: none;
+}
+
+/* .popular-menu-main .tab-content .pupular .top .left img:hover .popular-menu-main .tab-content .pupular .top .left .hover{
+    display: block;
+} */
+
+
+
+
+/* Lookbook */
+.lookbook-main .container {
+    padding: 0 10px;
+}
+
+.lookbook-main .lookbooks {
+    /* gap: 65px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.lookbook-main .lookbooks .lookbook {
+    position: relative;
+}
+
+.lookbook-main .lookbooks .lookbook img {
+    width: 100%;
+    display: flex;
+}
+
+.lookbook-main .lookbooks .lookbook .lookbook-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 10px 0;
+}
+
+.lookbook-main .lookbooks .lookbook .lookbook-text h2 {
+    /* font-size: 44.96px; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 25.96px;
+    color: #575153;
+    position: absolute;
+    text-align: right;
+    top: 30px;
+    right: 15px;
+}
+
+.lookbook-main .lookbooks .lookbook .lookbook-text h2 span {
+    font-weight: 300;
+}
+
+.lookbook-main .lookbooks .lookbook .lookbook-text p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14.05px;
+    color: #727272;
+    text-align: center;
+}
+
+.lookbook-main .lookbooks .lookbook .lookbook-text a {
+    /* padding: 20px 30px; */
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14.99px;
+    color: #454647;
+    border: 3px solid #737373;
+}
+
+/* hover */
+.lookbook-main .lookbooks .lookbook .lookbook-text a:hover {
+    background-color: #00c8c8;
+    border-color: #00c8c8;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* footer */
+/* footer-top */
+/* footer-top-first */
+footer .footer-main .container {
+    padding: 10px;
+}
+
+footer .footer-main .footer-top {
+    background-color: #f8f8f8;
+}
+
+footer .footer-main .footer-top .footer-top-first {
+    margin: 20px 0;
+}
+
+footer .footer-main .footer-top .footer-top-first .footer-dtl .details h3 {
+    /* font-size: 12.18px; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20.18px;
+    color: #575153;
+}
+
+footer .footer-main .footer-top .footer-top-first .footer-dtl .details ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6;
+}
+
+footer .footer-main .footer-top .footer-top-first .footer-dtl .details ul li,
+footer .footer-main .footer-top .footer-top-first .footer-dtl .details ul li a {
+    /* font-size: 13.11px; */
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #727272;
+    font-size: 15.11px;
+
+}
+
+footer .footer-main .footer-top .footer-top-first,
+footer .footer-main .footer-top .footer-top-second,
+footer .footer-main .footer-top .footer-top-first .footer-dtl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .footer-main .footer-top .footer-top-first .footer-dtl .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* footer-top-second */
+footer .footer-main .footer-top .footer-top-second .first img,
+footer .footer-main .footer-top .footer-top-second .second img {
+    width: 100%;
+    display: flex;
+}
+
+footer .footer-main .footer-top .footer-top-second .second {
+    position: relative;
+}
+
+footer .footer-main .footer-top .footer-top-second .second .social-media {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer .footer-main .footer-top .footer-top-second .second .social-media {
+    /* gap: 50px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer .footer-main .footer-top .footer-top-second .second .social-media .fa-brands {
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* footer-bottom */
+footer .footer-main .footer-bottom {
+    background-color: #333333;
+}
+
+footer .footer-main .footer-bottom .footer-bottom-main .left span,
+footer .footer-main .footer-bottom .footer-bottom-main .right span,
+footer .footer-main .footer-bottom .footer-bottom-main .right span a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12.18px;
+    color: #999999;
+}
+
+footer .footer-main .footer-bottom .footer-bottom-main .right span a {
+    text-decoration: none;
+}
+
+footer .footer-main .footer-bottom .footer-bottom-main,
+footer .footer-main .footer-bottom .footer-bottom-main .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* hover */
+footer .footer-main .footer-top .footer-top-first .footer-dtl .details ul li a:hover {
+    color: #00c8c8;
+    text-decoration: underline;
+    transition: all 0.2s ease-in-out;
+}
+
+footer .footer-main .footer-top .footer-top-second .second .social-media .fa-brands:hover {
+    background-color: #fff;
+    color: #00c8c8;
+    border-radius: 5%;
+}
+
+footer .footer-main .footer-bottom .footer-bottom-main .right span a:hover {
+    color: #00c8c8;
+    text-decoration: underline;
+    transition: all 0.2s ease-in-out;
+}
+
+/*------------------------375px--------------------- */
+@media only screen and (min-width: 375px) {
+
+    /* Lookbook */
+    .lookbook-main .container {
+        padding: 0 20px;
+    }
+
+    .lookbook-main .lookbooks .lookbook .lookbook-text h2 {
+        font-size: 28.96px;
+        /* font-size: 44.96px; */
+    }
+
+    .lookbook-main .lookbooks .lookbook .lookbook-text p {
+        font-size: 15.05px;
+        /* font-size: 14.05px; */
+        text-align: left;
+    }
+
+    .lookbook-main .lookbooks .lookbook .lookbook-text {
+        align-items: baseline;
+    }
+
+    /* footer */
+    footer .footer-main .container {
+        padding: 20px;
+    }
+
+    footer .footer-main .footer-top .footer-top-second .second .social-media .fa-brands {
+        font-size: 33.72px;
+    }
+
+    footer .footer-main .footer-top .footer-top-first .footer-dtl .details h3 {
+        /* font-size: 12.18px; */
+        font-size: 22.18px;
+    }
+
+    footer .footer-main .footer-top .footer-top-first .footer-dtl .details ul li,
+    footer .footer-main .footer-top .footer-top-first .footer-dtl .details ul li a {
+        /* font-size: 13.11px;*/
+        font-size: 18.11px;
+    }
+
+    footer .footer-main .footer-bottom .footer-bottom-main .left span,
+    footer .footer-main .footer-bottom .footer-bottom-main .right span,
+    footer .footer-main .footer-bottom .footer-bottom-main .right span a {
+        /* font-size: 12.18px; */
+        font-size: 14.18px;
+    }
+}
+
+/*------------------------425px--------------------- */
+@media only screen and (min-width: 425px) {
+
+    /* Lookbook */
+    .lookbook-main .container {
+        padding: 0 25px;
+    }
+
+    .lookbook-main .lookbooks .lookbook .lookbook-text h2 {
+        font-size: 32.96px;
+        /* font-size: 44.96px; */
+    }
+
+    .lookbook-main .lookbooks .lookbook .lookbook-text p {
+        font-size: 17.05px;
+        /* font-size: 14.05px; */
+        text-align: left;
+    }
+
+    /* footer */
+    footer .footer-main .container {
+        padding: 25px;
+    }
+
+    footer .footer-main .footer-top .footer-top-first .footer-dtl .details h3 {
+        /* font-size: 12.18px; */
+        font-size: 26.18px;
+    }
+
+    footer .footer-main .footer-top .footer-top-second .second .social-media .fa-brands {
+        font-size: 30px;
+    }
+}
+
+/*------------------------765px--------------------- */
+@media only screen and (min-width: 768px) {
+    /* Header */
+    header .header-main .mobile-header-nav{
+        top: 63px;
+    }
+    header .header-main .mobile-header .container {
+        padding: 10px 5px;
+    }
+    header .header-main .mobile-header .mobile-nav{
+        gap: 125px;
+    }
+    header .header-main .mobile-header .mobile-nav .bars a .fa-ellipsis-vertical,
+    header .header-main .mobile-header .mobile-nav .search a .fa-magnifying-glass,
+    header .header-main .mobile-header .mobile-nav .cart a .fa-cart-shopping,
+    header .header-main .mobile-header .mobile-nav .cart form select {
+        font-size: 27px;
+    }
+    header .header-main .searchbar{
+        top: 60px;
+    }
+    header .header-main .searchbar form input{
+        width: 60%;
+        padding: 12px 15px;
+        font-size: 22.36px;
+    }
+    header .header-main .searchbar form button{
+        padding: 12px 15px;
+        font-size: 21.36px;
+    }
+    header .header-main .mobile-header .mobile-nav .main{
+        gap: 50px;
+    }
+    header .header-main .searchbar form{
+        padding: 30px 0;
+    }
+    /* Popular */
+    .popular-menu-main .container {
+        /* padding: 0 128px; */
+        padding: 0 57px;
+    }
+    .popular-menu-main .popular-menu .tabs {
+        /* margin: 50px 0; */
+        flex-direction: row;
+        margin: 20px 0;
+    }
+    .popular-menu-main .popular-menu .tabs li{
+        font-size: 12px;
+        padding: 5px 17px 5px 21px;
+    }
+    .popular-menu-main .popular-menu .tab-content .popular-main .pupular .top {
+        flex-direction: row;
+    }
+
+    .popular-menu-main .popular-menu .tab-content .popular-main .right .bottom {
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .popular-menu-main .popular-menu .tab-content .popular-main .right .bottom .left .text {
+        top: 32px;
+        left: 25px;
+    }
+    .popular-menu-main .popular-menu .tab-content {
+        padding: 0;
+    }
+    .popular-menu-main .popular-menu .tab-content .popular-main .pupular .top .left .text span, .popular-menu-main .popular-menu .tab-content .popular-main .pupular .top .right .text span, .popular-menu-main .popular-menu .tab-content .popular-main .pupular .bottom .text span, .popular-menu-main .popular-menu .tab-content .popular-main .right .top .text span, .popular-menu-main .popular-menu .tab-content .popular-main .right .bottom .left .text span, .popular-menu-main .popular-menu .tab-content .popular-main .right .bottom .right .text span {
+        font-size: 15.67px;
+    }
+
+    /* Lookbook */
+    .lookbook-main .lookbooks .lookbook .lookbook-text {
+        position: absolute;
+        top: 190px;
+        right: 28px;
+        align-items: end;
+    }
+
+    .lookbook-main .lookbooks .lookbook .lookbook-text h2 {
+        font-size: 44.96px;
+        top: -110px;
+        right: 1px;
+    }
+
+    .lookbook-main .lookbooks .lookbook .lookbook-text p {
+        font-size: 14.05px;
+        text-align: right;
+        margin-top: 20px;
+        width: 58%;
+    }
+
+    .lookbook-main .lookbooks .lookbook .lookbook-text a {
+        padding: 20px 30px;
+    }
+
+    /*
+.lookbook-main .lookbooks{
+    /* gap: 65px; 30 */
+
+    /* footer */
+    footer .footer-main .footer-top .footer-top-first .one,
+    footer .footer-main .footer-top .footer-top-first .two {
+        flex-direction: row;
+        gap: 150px;
+    }
+
+    footer .footer-main .footer-top .footer-top-first .footer-dtl .details h3 {
+        /* font-size: 12.18px; */
+        font-size: 20.18px;
+    }
+
+    footer .footer-main .footer-top .footer-top-first .footer-dtl .details ul li,
+    footer .footer-main .footer-top .footer-top-first .footer-dtl .details ul li a {
+        /* font-size: 13.11px; */
+        font-size: 16.11px;
+    }
+
+    footer .footer-main .footer-top .footer-top-first {
+        gap: 42px;
+    }
+
+    footer .footer-main .footer-top .footer-top-second {
+        flex-direction: row;
+    }
+
+    footer .footer-main .footer-bottom .footer-bottom-main {
+        flex-direction: row;
+        gap: 320px;
+    }
+
+    footer .footer-main .footer-bottom .container {
+        padding: 5px 25px;
+    }
+
+    footer .footer-main .footer-bottom .footer-bottom-main .right {
+        gap: 5px;
+    }
+}
+
+/*-----------------------1024px--------------------- */
+@media only screen and (min-width: 1024px) {
+
+    /* Header */
+    header .header-main .mobile-header,
+    header .header-main .mobile-header-nav,
+    header .header-main .bg,
+    header .header-main .searchbar {
+        display: none;
+    }
+
+    header .header-main .desktop-nav {
+        display: block;
+    }
+
+    header .header-main .desktop-nav .header-top {
+        background-color: #333333;
+    }
+
+    header .header-main .desktop-nav .header-top .container {
+        padding: 0 200px;
+        /*412*/
+    }
+
+    header .header-main .desktop-nav .header-top .header-top-main {
+        display: flex;
+        align-items: center;
+        gap: 106px;
+    }
+
+    header .header-main .desktop-nav .header-top .header-top-main .first form label {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 12.18px;
+        color: #999999;
+    }
+
+    header .header-main .desktop-nav .header-top .header-top-main .first form select {
+        border: none;
+        font-family: 'Myriad Pro Regular';
+        font-weight: 400;
+        font-size: 12.18px;
+        color: #999999;
+        background-color: #333333;
+    }
+
+    header .header-main .desktop-nav .header-top .header-top-main .second {
+        display: flex;
+        align-items: center;
+        /* gap: 76px; */
+        gap: 60px;
+    }
+
+    header .header-main .desktop-nav .header-top .header-top-main .second .one {
+        display: flex;
+        align-items: center;
+        /* gap: 34px; */
+        gap: 10px;
+    }
+
+    header .header-main .desktop-nav .header-top .header-top-main .second .one a {
+        text-decoration: none;
+        color: #999999;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 12.18px;
+        border: 0px solid transparent;
+        padding: 13px 20px;
+    }
+
+    header .header-main .desktop-nav .header-top .header-top-main .second .two {
+        display: flex;
+        align-items: center;
+        padding: 13px 20px;
+        /* gap: 20px; */
+    }
+
+    header .header-main .desktop-nav .header-top .header-top-main .second .two .fa-cart-shopping {
+        color: #999999;
+        font-size: 12.18px;
+    }
+
+    header .header-main .desktop-nav .header-top .header-top-main .second .two span {
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 12.18px;
+        color: #999999;
+        background-color: #333333;
+        border: 0px solid transparent;
+        padding: 13px 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    header .header-main .desktop-nav .header-top .header-top-main .second .two span .fa-angle-down {
+        font-size: 12.18px;
+        color: #999999;
+    }
+
+    header .header-main .desktop-nav .header-bottom {
+        position: relative;
+        margin: 11px 0;
+        background-color: #f8f8f8;
+    }
+
+    header .header-main .desktop-nav .header-bottom .container {
+        padding: 0 15px;
+        /*126*/
+    }
+
+    header .header-main .desktop-nav .header-bottom img {
+        width: 100%;
+        display: flex;
+    }
+
+    header .header-main .desktop-nav .header-bottom .men-collection a {
+        display: inline-block;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        text-decoration: none;
+        color: #454647;
+        font-size: 14.99px;
+        padding: 19px 33px;
+        border: 3px solid #737373;
+        position: absolute;
+        right: 175px;
+        bottom: 32px;
+    }
+
+    header .header-main .desktop-nav .header-bottom .header-bottom-main {
+        position: absolute;
+        top: 0;
+        /* padding: 22px 0; */
+        padding: 12px 0;
+        display: flex;
+        align-items: center;
+        gap: 174px;
+    }
+
+    header .header-main .desktop-nav .header-bottom .header-bottom-main .left a img {
+        width: initial;
+    }
+
+    header .header-main .desktop-nav .header-bottom .header-bottom-main .right .navigation-menu ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        /* gap: 53px; */
+        gap: 17px;
+    }
+
+    header .header-main .desktop-nav .header-bottom .header-bottom-main .right .navigation-menu ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 10px;
+    }
+
+    header .header-main .desktop-nav .header-bottom .header-bottom-main .right .navigation-menu ul li a {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        text-decoration: none;
+        font-size: 12.18px;
+        color: #222222;
+    }
+
+    header .header-main .desktop-nav .header-bottom .header-bottom-main .right {
+        display: flex;
+        gap: 15px;
+        /*107*/
+    }
+
+    header .header-main .desktop-nav .header-bottom .header-bottom-main .right .search {
+        position: relative;
+    }
+
+    header .header-main .desktop-nav .header-bottom .header-bottom-main .right .search input {
+        border: 2px solid #eaeaea;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 12.18px;
+        padding: 9px;
+    }
+
+    header .header-main .desktop-nav .header-bottom .header-bottom-main .right .search input::placeholder {
+        color: #989898;
+    }
+
+    header .header-main .desktop-nav .header-bottom .header-bottom-main .right .search .fa-magnifying-glass {
+        font-size: 13.11px;
+        color: #989898;
+        position: absolute;
+        top: 11px;
+        bottom: 4px;
+        right: 8px;
+    }
+
+    header .header-main .desktop-nav .mens,
+    header .header-main .desktop-nav .womens,
+    header .header-main .desktop-nav .the-brands,
+    header .header-main .desktop-nav .Local-stores,
+    header .header-main .desktop-nav .lookbook {
+        left: 412px;
+        top: 114px;
+        display: none;
+        position: absolute;
+        z-index: 2;
+        background-color: #f8f8f8;
+        padding: 27px;
+        box-shadow: -1px 1px 20px #e8e8e8;
+    }
+
+    header .header-main .desktop-nav .womens {
+        left: 465px;
+    }
+
+    header .header-main .desktop-nav .the-brands {
+        left: 545px;
+        top: 140px;
+    }
+
+    header .header-main .desktop-nav .Local-stores {
+        left: 645px;
+        top: 140px;
+    }
+
+    header .header-main .desktop-nav .lookbook {
+        left: 729px;
+        top: 140px;
+    }
+
+    header .header-main .desktop-nav .mens .details,
+    header .header-main .desktop-nav .womens .details {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header .header-main .desktop-nav .mens .top,
+    header .header-main .desktop-nav .womens .top {
+        display: flex;
+        align-items: baseline;
+        gap: 80px;
+    }
+
+    header .header-main .desktop-nav .mens .top h3,
+    header .header-main .desktop-nav .womens .top h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        color: #575153;
+    }
+
+    header .header-main .desktop-nav .mens .top ul,
+    header .header-main .desktop-nav .womens .top ul,
+    header .header-main .desktop-nav .the-brands ul,
+    header .header-main .desktop-nav .lookbook ul {
+        list-style: none;
+        margin-top: 15px;
+    }
+
+    header .header-main .desktop-nav .the-brands ul,
+    header .header-main .desktop-nav .lookbook ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header .header-main .desktop-nav .mens .top ul li a,
+    header .header-main .desktop-nav .womens .top ul li a,
+    header .header-main .desktop-nav .the-brands ul li a {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 13.11px;
+        color: #797979;
+    }
+
+    header .header-main .desktop-nav .mens .bottom img,
+    header .header-main .desktop-nav .womens .bottom img {
+        width: initial;
+        display: flex;
+    }
+
+    header .header-main .desktop-nav .Local-stores ul li {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    header .header-main .desktop-nav .lookbook ul li a {
+        color: #1f1e1f;
+    }
+
+    header .header-main .desktop-nav .Local-stores ul li p,
+    header .header-main .desktop-nav .lookbook ul li a {
+        font-weight: 400;
+        text-decoration: none;
+        font-size: 17px;
+        margin: 10px 0;
+    }
+
+    header .header-main .desktop-nav .Local-stores ul li a {
+        text-decoration: none;
+        color: #1f1e1f;
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    /* Hover */
+    header .header-main .desktop-nav .header-top .header-top-main .second .one a:hover,
+    header .header-main .desktop-nav .header-top .header-top-main .second .two select:hover,
+    header .header-main .desktop-nav .header-top .header-top-main .second .two:hover,
+    header .header-main .desktop-nav .header-top .header-top-main .second .two span:hover {
+        color: #fff;
+        background-color: #00c8c8;
+        border: 0px solid transparent;
+        transition: all 0.5s ease-in-out;
+    }
+
+    header .header-main .desktop-nav .header-bottom .header-bottom-main .right .navigation-menu ul li:hover,
+    header .header-main .desktop-nav .header-bottom .header-bottom-main .right .navigation-menu ul li a:hover {
+        color: #00c8c8;
+        transition: all 0.5s ease-in-out;
+    }
+
+    header .header-main .desktop-nav .header-bottom .men-collection a:hover {
+        background-color: #00c8c8;
+        color: #fff;
+        border-color: #00c8c8;
+        transition: all 0.5s ease-in-out;
+    }
+
+    /* header .header-main .desktop-nav .header-bottom .header-bottom-main .right .navigation-menu ul li a.men-hover:hover header .header-main .desktop-nav .mens {
+        display: flex;
+    } */
+    /* Popular */
+    .popular-menu-main .container {
+        /* padding: 0 128px; */
+        padding: 0 65px;
+    }
+    .popular-menu-main .popular-menu .tab-content .popular-main {
+        flex-direction: row;
+        align-items: center;
+    }
+    .popular-menu-main .popular-menu .tabs li {
+        font-size: 12.18px;
+        color: #727272;
+    }
+    .popular-menu-main .popular-menu .tabs{
+        background-color: transparent;
+    }
+    .popular-menu-main .popular-menu .tabs li {
+        padding: 0;
+    }
+    .popular-menu-main .popular-menu .tabs{
+        gap: 50px;
+    }
+    .popular-menu-main .popular-menu .tab-content .popular-main, .popular-menu-main .popular-menu .tab-content .popular-main .pupular, .popular-menu-main .popular-menu .tab-content .popular-main .pupular .top, .popular-menu-main .popular-menu .tab-content .popular-main .right, .popular-menu-main .popular-menu .tab-content .popular-main .right .bottom{
+        gap: 27px;
+    }
+    /* .popular-menu-main .popular-menu .tabs {
+        margin: 50px 0;
+    } */
+    /* Lookbook */
+    .lookbook-main .container {
+        padding: 0;
+    }
+
+    .lookbook-main .lookbooks {
+        flex-direction: row;
+        gap: 5px
+            /*65*/
+        ;
+    }
+
+    .lookbook-main .lookbooks .lookbook .lookbook-text h2 {
+        font-size: 26.96px;
+        /* font-size: 44.96px; */
+        top: -57px;
+        right: 0px
+    }
+
+    .lookbook-main .lookbooks .lookbook .lookbook-text {
+        position: absolute;
+        top: 68px;
+        right: 22px;
+        gap: 20px;
+        /*30*/
+    }
+
+    .lookbook-main .lookbooks .lookbook .lookbook-text p {
+        font-size: 12.05px;
+        width: 55%;
+        /*font-size: 14.05px;*/
+    }
+
+    .lookbook-main .lookbooks .lookbook .lookbook-text a {
+        padding: 10px 15px;
+        /* padding: 20px 30px; */
+    }
+
+    /* Footer  */
+    footer .footer-main .container,
+    footer .footer-main .footer-bottom .container {
+        /* padding: 0 405px; */
+        padding: 0 40px;
+    }
+
+    footer .footer-main .footer-top {
+        padding: 60px 0 51px 0;
+    }
+
+    footer .footer-main .footer-top .footer-top-first {
+        gap: 30px;
+        /*94*/
+        flex-direction: row;
+        margin: 0 0 60px 0;
+    }
+
+    footer .footer-main .footer-top .footer-top-first .footer-dtl .details ul,
+    footer .footer-main .footer-top .footer-top-first .footer-dtl .details {
+        align-items: baseline;
+        gap: 15px;
+    }
+
+    footer .footer-main .footer-top .footer-top-first .footer-dtl .details h3 {
+        /* font-size: 12.18px; */
+        font-size: 17.18px;
+    }
+
+    footer .footer-main .footer-top .footer-top-first .footer-dtl .details ul li,
+    footer .footer-main .footer-top .footer-top-first .footer-dtl .details ul li a {
+        font-size: 13.11px;
+    }
+
+    footer .footer-main .footer-top .footer-top-first .one,
+    footer .footer-main .footer-top .footer-top-first .two {
+        gap: 30px;
+        /*94*/
+    }
+
+    footer .footer-main .footer-top .footer-top-first,
+    footer .footer-main .footer-top .footer-top-second,
+    footer .footer-main .footer-top .footer-top-first .footer-dtl {
+        align-items: baseline;
+    }
+
+    footer .footer-main .footer-top .footer-top-second {
+        gap: 28px;
+    }
+
+    footer .footer-main .footer-bottom {
+        padding: 15px 0;
+    }
+
+    footer .footer-main .footer-bottom .footer-bottom-main {
+        gap: 410px;
+    }
+
+    footer .footer-main .footer-bottom .footer-bottom-main .right {
+        flex-direction: row;
+        gap: 35px;
+    }
+
+    footer .footer-main .footer-bottom .footer-bottom-main .left span,
+    footer .footer-main .footer-bottom .footer-bottom-main .right span,
+    footer .footer-main .footer-bottom .footer-bottom-main .right span a {
+        font-size: 12.18px;
+    }
+
+    footer .footer-main .footer-top .footer-top-second .second .social-media {
+        gap: 50px;
+    }
+}
+
+/*-----------------------1200px--------------------- */
+@media only screen and (min-width: 1200px) {
+
+    /* Header */
+    header .header-main .desktop-nav .header-top .container {
+        padding: 0 250px;
+        /*412*/
+    }
+
+    header .header-main .desktop-nav .header-top .header-top-main {
+        gap: 175px;
+    }
+
+    header .header-main .desktop-nav .header-top .header-top-main .second {
+        /* gap: 76px; */
+        gap: 65px;
+    }
+
+    header .header-main .desktop-nav .header-top .header-top-main .second .one {
+        /* gap: 34px; */
+        gap: 20px;
+    }
+
+    header .header-main .desktop-nav .header-top .header-top-main .second .two {
+        /* gap: 20px; */
+        gap: 3px;
+    }
+
+    /* -------bottom-------- */
+    header .header-main .desktop-nav .header-bottom .container {
+        padding: 0 20px;
+        /*126*/
+    }
+
+    header .header-main .desktop-nav .header-bottom .header-bottom-main {
+        padding: 22px 0;
+        gap: 250px;
+    }
+
+    header .header-main .desktop-nav .header-bottom .header-bottom-main .right .navigation-menu ul {
+        /* gap: 53px; */
+        gap: 35px;
+    }
+
+    header .header-main .desktop-nav .header-bottom .header-bottom-main .right {
+        gap: 30px;
+        /*107*/
+    }
+
+    header .header-main .desktop-nav .mens {
+        left: 492px;
+        top: 150px;
+    }
+
+    header .header-main .desktop-nav .womens {
+        left: 564px;
+        top: 150px;
+    }
+
+    header .header-main .desktop-nav .the-brands {
+        left: 662px;
+        top: 150px;
+    }
+
+    header .header-main .desktop-nav .Local-stores {
+        left: 782px;
+        top: 150px;
+    }
+
+    header .header-main .desktop-nav .lookbook {
+        left: 905px;
+        top: 150px;
+    }
+    /* POPULAR */
+    .popular-menu-main .container {
+        /* padding: 0 128px; */
+        padding: 0 75px;
+    }
+    .popular-menu-main .popular-menu .tabs {
+        /* margin: 50px 0; */
+        margin: 30px 0;
+    }
+    /* Lookbook */
+    .lookbook-main .lookbooks {
+        /* margin: 58px 0 115px 0; */
+        gap: 15px
+            /*65*/
+        ;
+        margin: 58px 0;
+    }
+
+    .lookbook-main .lookbooks .lookbook .lookbook-text {
+        top: 105px;
+        right: 15px;
+    }
+
+    .lookbook-main .lookbooks .lookbook .lookbook-text h2 {
+        font-size: 30.96px;
+        /* font-size: 44.96px;*/
+        top: -63px;
+    }
+
+    .lookbook-main .lookbooks .lookbook .lookbook-text p {
+        width: 61%;
+        font-size: 14.05px;
+    }
+
+    /* Footer */
+    footer .footer-main .container,
+    footer .footer-main .footer-bottom .container {
+        /* padding: 0 405px; */
+        padding: 0 100px;
+    }
+
+    footer .footer-main .footer-top .footer-top-first,
+    footer .footer-main .footer-top .footer-top-first .one,
+    footer .footer-main .footer-top .footer-top-first .two {
+        gap: 49px;
+        /*94*/
+    }
+
+    footer .footer-main .footer-bottom .footer-bottom-main {
+        gap: 477px;
+    }
+}
+
+/*-----------------------1366px--------------------- */
+@media only screen and (min-width: 1366px) {
+
+    /* Header */
+    header .header-main .desktop-nav .header-top .container {
+        padding: 0 300px;
+        /*412*/
+    }
+
+    header .header-main .desktop-nav .header-top .header-top-main {
+        gap: 215px;
+    }
+
+    header .header-main .desktop-nav .header-top .header-top-main .second {
+        gap: 76px;
+    }
+
+    header .header-main .desktop-nav .header-top .header-top-main .second .one {
+        gap: 34px;
+    }
+
+    header .header-main .desktop-nav .header-top .header-top-main .second .two {
+        /* gap: 20px; */
+        gap: 5px;
+    }
+
+    /* -------bottom-------- */
+    header .header-main .desktop-nav .header-bottom .container {
+        padding: 0 90px;
+        /*126*/
+    }
+
+    header .header-main .desktop-nav .header-bottom .header-bottom-main .right .navigation-menu ul {
+        /* gap: 53px; */
+        gap: 40px;
+    }
+
+    header .header-main .desktop-nav .header-bottom .header-bottom-main .right {
+        gap: 70px;
+        /*107*/
+    }
+
+    header .header-main .desktop-nav .mens {
+        left: 560px;
+    }
+
+    header .header-main .desktop-nav .womens {
+        left: 637px;
+    }
+
+    header .header-main .desktop-nav .the-brands {
+        left: 735px;
+    }
+
+    header .header-main .desktop-nav .Local-stores {
+        left: 862px;
+    }
+
+    header .header-main .desktop-nav .lookbook {
+        left: 998px;
+    }
+
+    header .header-main .desktop-nav .mens .top ul,
+    header .header-main .desktop-nav .womens .top ul {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 16px;
+        margin-top: 31px;
+    }
+
+    header .header-main .desktop-nav .mens .details,
+    header .header-main .desktop-nav .womens .details {
+        gap: 57px;
+    }
+
+    header .header-main .desktop-nav .the-brands ul li a {
+        font-size: 18.11px;
+    }
+
+    header .header-main .desktop-nav .lookbook ul li a {
+        font-size: 19px;
+    }
+
+    /* Lookbook  */
+    .lookbook-main .lookbooks {
+        /* margin: 58px 0 115px 0; */
+        margin: 58px 0 80px 0;
+    }
+
+    .lookbook-main .lookbooks {
+        gap: 25px
+            /*65*/
+        ;
+    }
+
+    .lookbook-main .lookbooks .lookbook .lookbook-text {
+        top: 135px;
+        /*r-54*/
+        gap: 28px;
+    }
+
+    .lookbook-main .lookbooks .lookbook .lookbook-text h2 {
+        font-size: 35.96px;
+        top: -78px;
+    }
+
+    .lookbook-main .lookbooks .lookbook .lookbook-text p {
+        width: 58%;
+        margin-top: 28px;
+    }
+
+    /* Footer */
+    footer .footer-main .container,
+    footer .footer-main .footer-bottom .container {
+        /* padding: 0 405px; */
+        padding: 0 180px;
+    }
+
+    footer .footer-main .footer-top .footer-top-first,
+    footer .footer-main .footer-top .footer-top-first .one,
+    footer .footer-main .footer-top .footer-top-first .two {
+        gap: 51px;
+        /*94*/
+    }
+
+    footer .footer-main .footer-bottom .footer-bottom-main {
+        gap: 483px;
+    }
+
+}
+
+/*-----------------------1440px--------------------- */
+@media only screen and (min-width: 1440px) {
+
+    /* Header */
+    header .header-main .desktop-nav .header-top .container {
+        padding: 0 340px;
+        /*412*/
+    }
+
+    header .header-main .desktop-nav .header-top .header-top-main {
+        gap: 205px;
+    }
+
+    header .header-main .desktop-nav .header-top .header-top-main .second .two {
+        /* gap: 20px; */
+        gap: 8px;
+    }
+
+    /* -------bottom-------- */
+    header .header-main .desktop-nav .header-bottom .container {
+        padding: 0 105px;
+        /*126*/
+    }
+
+    header .header-main .desktop-nav .header-bottom .header-bottom-main .right .navigation-menu ul {
+        gap: 53px;
+    }
+
+    header .header-main .desktop-nav .header-bottom .header-bottom-main .right {
+        gap: 80px;
+        /*107*/
+    }
+
+    header .header-main .desktop-nav .mens {
+        left: 575px;
+    }
+
+    header .header-main .desktop-nav .womens {
+        left: 668px;
+    }
+
+    header .header-main .desktop-nav .the-brands {
+        left: 782px;
+    }
+
+    header .header-main .desktop-nav .Local-stores {
+        left: 918px;
+    }
+
+    header .header-main .desktop-nav .lookbook {
+        left: 1065px;
+    }
+
+    header .header-main .desktop-nav .header-bottom .men-collection a {
+        right: 240px;
+        bottom: 70px;
+    }
+    /* POPULAR */
+    .popular-menu-main .container {
+        /* padding: 0 128px; */
+        padding: 0 100px;
+    }
+    .popular-menu-main .popular-menu .tabs {
+        /* margin: 50px 0; */
+        margin: 40px 0;
+    }
+    /* Lookbook */
+    .lookbook-main .lookbooks {
+        /* margin: 58px 0 115px 0; */
+        margin: 58px 0 100px 0;
+    }
+
+    .lookbook-main .lookbooks {
+        gap: 30px
+            /*65*/
+        ;
+    }
+
+    .lookbook-main .lookbooks .lookbook .lookbook-text {
+        right: 18px
+            /*54*/
+        ;
+    }
+
+    .lookbook-main .lookbooks .lookbook .lookbook-text h2 {
+        font-size: 40.96px;
+    }
+
+    /* Footer */
+    footer .footer-main .container,
+    footer .footer-main .footer-bottom .container {
+        /* padding: 0 405px; */
+        padding: 0 257px;
+    }
+
+    footer .footer-main .footer-top .footer-top-first .footer-dtl .details h3 {
+        font-size: 12.18px;
+    }
+
+    footer .footer-main .footer-bottom .footer-bottom-main {
+        gap: 403px;
+    }
+}
+
+/*-----------------------1920px--------------------- */
+@media only screen and (min-width: 1920px) {
+
+    /* Header */
+    header .header-main .desktop-nav .header-top .container {
+        padding: 0 412px;
+        /*412*/
+    }
+
+    header .header-main .desktop-nav .header-top .header-top-main {
+        gap: 529px;
+    }
+
+    header .header-main .desktop-nav .header-top .header-top-main .second .two {
+        gap: 20px;
+    }
+
+    /* -------bottom-------- */
+    header .header-main .desktop-nav .header-bottom .container {
+        padding: 0 126px;
+        /*126*/
+    }
+
+    header .header-main .desktop-nav .header-bottom .header-bottom-main {
+        gap: 602px;
+    }
+
+    header .header-main .desktop-nav .header-bottom .header-bottom-main .right {
+        gap: 107px;
+        /*107*/
+    }
+
+    header .header-main .desktop-nav .header-bottom .men-collection a {
+        right: 302px;
+        bottom: 127px;
+    }
+
+    header .header-main .desktop-nav .mens {
+        left: 944px;
+    }
+
+    header .header-main .desktop-nav .womens {
+        left: 1040px;
+    }
+
+    header .header-main .desktop-nav .the-brands {
+        left: 1156px;
+    }
+
+    header .header-main .desktop-nav .Local-stores {
+        left: 1289px;
+    }
+
+    header .header-main .desktop-nav .lookbook {
+        left: 1437px;
+    }
+    /* POPULAR */
+    .popular-menu-main .container {
+        /* padding: 0 128px; */
+        padding: 0 128px;
+    }
+    .popular-menu-main .popular-menu .tabs {
+        /* margin: 50px 0; */
+        margin: 50px 0;
+    }
+    .popular-menu-main .popular-menu .tab-content .popular-main .pupular .top .left .text span, .popular-menu-main .popular-menu .tab-content .popular-main .pupular .top .right .text span, .popular-menu-main .popular-menu .tab-content .popular-main .pupular .bottom .text span, .popular-menu-main .popular-menu .tab-content .popular-main .right .top .text span, .popular-menu-main .popular-menu .tab-content .popular-main .right .bottom .left .text span, .popular-menu-main .popular-menu .tab-content .popular-main .right .bottom .right .text span{
+        font-size: 19.67px;
+    }
+    /* Lookbook */
+    .lookbook-main .lookbooks {
+        margin: 58px 0 115px 0;
+        /* margin: 58px 0 100px 0; */
+    }
+
+    .lookbook-main .lookbooks {
+        gap: 65px
+            /*65*/
+        ;
+    }
+
+    .lookbook-main .lookbooks .lookbook .lookbook-text {
+        right: 54px
+            /*54*/
+        ;
+        top: 150px;
+    }
+
+    .lookbook-main .lookbooks .lookbook .lookbook-text h2 {
+        font-size: 44.96px;
+    }
+
+    .lookbook-main .lookbooks .lookbook .lookbook-text p {
+        margin-top: 48px;
+        width: 51%;
+    }
+
+    .lookbook-main .lookbooks .lookbook .lookbook-text a {
+        /* padding: 10px 15px; */
+        padding: 20px 30px;
+    }
+
+    /* Footer */
+    footer .footer-main .container,
+    footer .footer-main .footer-bottom .container {
+        padding: 0 405px;
+    }
+
+    footer .footer-main .footer-top .footer-top-first,
+    footer .footer-main .footer-top .footer-top-first .one,
+    footer .footer-main .footer-top .footer-top-first .two {
+        gap: 94px;
+        /*94*/
+    }
+
+    footer .footer-main .footer-bottom .footer-bottom-main {
+        gap: 587px;
+    }
+}

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/18e0c14d32.js" crossorigin="anonymous"></script>
+    <title>EVENUE FASHION</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-main">
+            <div class="mobile-header">
+                <div class="container">
+                    <div class="mobile-nav">
+                        <div class="bars">
+                            <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                        </div>
+                        <div class="logo">
+                            <a href="/"><img src="./img/logo.png" alt="EVENUE FASHION"></a>
+                        </div>
+                        <div class="main">
+                            <div class="search">
+                                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </div>
+                            <div class="cart">
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <!-- <span>empty<i class="fa-solid fa-angle-down"></i></span> -->
+                                <form action="">
+                                    <select name="cart" id="cart">
+                                        <option value="empty">Empty</option>
+                                    </select>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-header-nav">
+                <nav class="top-nav">
+                    <ul class="Reg" style="position: relative;">
+                        <li class="dropdown"><a href="#">REGISTER</a></li>
+                    </ul>
+                    <ul class="Signin" style="position: relative;">
+                        <li class="dropdown"><a href="#">SIGN IN</a></li>
+                    </ul>
+                    <ul class="Currency" style="position: relative;">
+                        <li class="dropdown">
+                            <a href="#">CURRENCY <span>&diams;</span></a>
+                            <ul class="dropdown-menu"
+                                style="position: absolute;right:-95px;top: 0px;z-index: 4;display: none;">
+                                <li class="dropdown"><a href="#">GBP</a></li>
+                                <li class="dropdown"><a href="#">USD</a></li>
+                                <li class="dropdown"><a href="#">EUR</a></li>
+                                <li class="dropdown"><a href="#">JPY</a></li>
+                                <li class="dropdown"><a href="#">AUD</a></li>
+                                <li class="dropdown"><a href="#">CAD</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="first" style="position: relative;">
+                        <li class="dropdown">
+                            <a href="#">MENS <span>&diams;</span></a>
+                            <ul class="dropdown-menu" style="position: absolute;right: -137px;top: 0px;z-index: 2;">
+                                <li class="dropdown"><a href="#">Casuals <span>&diams;</span></a>
+                                    <ul class="dropdown-menu" style="position: absolute;top:39px;left:0.2px;z-index:7;">
+                                        <li><a href="#">Jackets</a></li>
+                                        <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                        <li><a href="#">Polo Shirts</a></li>
+                                        <li><a href="#">Sportswear</a></li>
+                                        <li><a href="#">Trousers & Chinos</a></li>
+                                        <li><a href="#">T-Shirts</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Formals <span>&diams;</span></a>
+                                    <ul class="dropdown-menu" style="position: absolute;
+                                    top: 0;
+                                    left: 91px;">
+                                        <li><a href="#">Jackets</a></li>
+                                        <li><a href="#">Shirts</a></li>
+                                        <li><a href="#">Suits</a></li>
+                                        <li><a href="#">Trousers</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="Second" style="position: relative;">
+                        <li class="dropdown">
+                            <a href="#">WOMENS <span>&diams;</span></a>
+                            <ul class="dropdown-menu" style="position: absolute;right: -105px;top: 0px;z-index: 3;">
+                                <li class="dropdown"><a href="#">Casuals <span>&diams;</span></a>
+                                    <ul class="dropdown-menu" style="position: absolute;top: -154px;left: 92px;">
+                                        <li><a href="#">Tees</a></li>
+                                        <li><a href="#">Jeans</a></li>
+                                        <li><a href="#">Leggins</a></li>
+                                        <li><a href="#">Dresses</a></li>
+                                        <li><a href="#">Sweaters</a></li>
+                                        <li><a href="#">Hoodies</a></li>
+                                        <li><a href="#">Jackets</a></li>
+                                        <li><a href="#">Jumpsuits</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Formals <span>&diams;</span></a>
+                                    <ul class="dropdown-menu" style="position: absolute;top: -155px;left: 101px;">
+                                        <li><a href="#">Blazers</a></li>
+                                        <li><a href="#">Trousers</a></li>
+                                        <li><a href="#">Pant</a></li>
+                                        <li><a href="#">Shirts</a></li>
+                                        <li><a href="#">Dresses</a></li>
+                                        <li><a href="#">Suits</a></li>
+                                        <li><a href="#">Skirts</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="Third" style="position: relative;">
+                        <li class="dropdown">
+                            <a href="#">THE BRAND <span>&diams;</span></a>
+                            <ul class="dropdown-menu"
+                                style="position: absolute;right:-157px;top: 0px;z-index: 4;display: none;">
+                                <li class="dropdown"><a href="#">FashionELite</a></li>
+                                <li class="dropdown"><a href="#">Stylemaven</a></li>
+                                <li class="dropdown"><a href="#">GlamourAvenue</a></li>
+                                <li class="dropdown"><a href="#">TrendTrove</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="Fourth" style="position: relative;">
+                        <li class="dropdown">
+                            <a href="#">LOCAL STORES <span>&diams;</span></a>
+                            <ul class="dropdown-menu" style="position: absolute;right: -152px;top: 0px;z-index: 3;">
+                                <li class="dropdown"><a href="#">Glamour Haven <span>&diams;</span></a>
+                                    <ul class="dropdown-menu"
+                                        style="position: absolute;top: -103px;z-index: 5;left: 1px;padding: 4px;">
+                                        <li>
+                                            <p>ADDRESS: <br>456 style street, <br>cityville</p>
+                                        </li>
+                                        <li><a href="tel:1234567890">Contact:1234567890</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a href="#">Elegance Emporium <span>&diams;</span></a>
+                                    <ul class="dropdown-menu"
+                                        style="position: absolute;top: -103px;left: 1px;padding: 4px;">
+                                        <li>
+                                            <p>ADDRESS: <br>789 Fashion Avenue, <br>TownSville</p>
+                                        </li>
+                                        <li><a href="tel:1234567890">Contact:1234567890</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="Fifth" style="position: relative;">
+                        <li class="dropdown">
+                            <a href="#">LOOKBOOK <span>&diams;</span></a>
+                            <ul class="dropdown-menu"
+                                style="position: absolute;right: -177px;top: -77px;z-index: 4;display: none;">
+                                <li class="dropdown"><a href="#">Men's Lookbook</a></li>
+                                <li class="dropdown"><a href="#">Women's Lookbook</a></li>
+                                <li class="dropdown"><a href="#">Your Lookbook</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bg">
+                <img src="./img/slider-bg.png" alt="">
+            </div>
+            <div class="searchbar">
+                <form action="">
+                    <input type="search" name="search" id="search" placeholder="Search here....">
+                    <button type="submit">SEARCH</button>
+                </form>
+            </div>
+            <div class="desktop-nav">
+                <div class="header-top">
+                    <div class="container">
+                        <div class="header-top-main">
+                            <div class="first">
+                                <form action="">
+                                    <label for="Currency">Currency : </label>
+                                    <select name="Currency" id="Currency">
+                                        <option value="GBP">GBP</option>
+                                        <option value="GBP">USD</option>
+                                        <option value="GBP">EUR</option>
+                                        <option value="GBP">JPY</option>
+                                        <option value="GBP">AUD</option>
+                                        <option value="GBP">CAD</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="second">
+                                <div class="one">
+                                    <a href="#">Register</a>
+                                    <a href="#">Sign In</a>
+                                </div>
+                                <div class="two">
+                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                    <span>empty<i class="fa-solid fa-angle-down"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <img src="./img/slider-bg.png" alt="AVE">
+                    <div class="container">
+                        <div class="men-collection">
+                            <a href="#">SHOP MEN'S COLLECTION</a>
+                        </div>
+                        <div class="header-bottom-main">
+                            <div class="left">
+                                <a href="/"><img src="./img/logo.png" alt="AVE"></a>
+                            </div>
+                            <div class="right">
+                                <div class="navigation-menu">
+                                    <ul>
+                                        <li class="men-hover">
+                                            <a href="#">MENS</a>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </li>
+                                        <li class="women-hover">
+                                            <a href="#">WOMENS</a>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </li>
+                                        <li class="brands-hover">
+                                            <a href="#">THE BRANDS</a>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </li>
+                                        <li class="local-stores-hover">
+                                            <a href="#">LOCAL STORES</a>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </li>
+                                        <li class="lookbook-hover">
+                                            <a href="#">LOOK BOOK</a>
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="search">
+                                    <form action="">
+                                        <input type="search" name="search" id="search" placeholder="Search..">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mens">
+                    <div class="details">
+                        <div class="top">
+                            <div class="left">
+                                <h3>CASUALS</h3>
+                                <ul>
+                                    <li><a href="#">Jackets</a></li>
+                                    <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                    <li><a href="#">Polo Shirts</a></li>
+                                    <li><a href="#">Sportswear</a></li>
+                                    <li><a href="#">Trousers & Chinos</a></li>
+                                    <li><a href="#">T-Shirts</a></li>
+                                </ul>
+                            </div>
+                            <div class="right">
+                                <h3>FORMALS</h3>
+                                <ul>
+                                    <li><a href="#">Jackets</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Suits</a></li>
+                                    <li><a href="#">Trousers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <img src="./img/autumn-sale.png" alt="SALE">
+                        </div>
+                    </div>
+                </div>
+                <div class="womens">
+                    <div class="details">
+                        <div class="top">
+                            <div class="left">
+                                <h3>CASUALS</h3>
+                                <ul>
+                                    <li><a href="#">Jeans</a></li>
+                                    <li><a href="#">Leggins</a></li>
+                                    <li><a href="#">Sweaters</a></li>
+                                    <li><a href="#">Hoodies</a></li>
+                                    <li><a href="#">Jackets</a></li>
+                                    <li><a href="#">Jumpsuits</a></li>
+                                </ul>
+                            </div>
+                            <div class="right">
+                                <h3>FORMALS</h3>
+                                <ul>
+                                    <li><a href="#">Blazers</a></li>
+                                    <li><a href="#">Trousers</a></li>
+                                    <li><a href="#">Pant</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <img src="./img/autumn-sale.png" alt="SALE">
+                        </div>
+                    </div>
+                </div>
+                <div class="the-brands">
+                    <ul class="dropdown-menu">
+                        <li class="dropdown"><a href="#">FashionELite</a></li>
+                        <li class="dropdown"><a href="#">Stylemaven</a></li>
+                        <li class="dropdown"><a href="#">GlamourAvenue</a></li>
+                        <li class="dropdown"><a href="#">TrendTrove</a></li>
+                    </ul>
+                </div>
+                <div class="Local-stores">
+                    <ul>
+                        <li>Glamour Haven: <br>
+                            <p>ADDRESS: <br>456 style street, <br>cityville</p>
+                            <a href="tel:1234567890">Contact:1234567890</a>
+                        </li>
+                        <li>Elegance Emporium: <br>
+                            <p>ADDRESS: <br>789 Fashion Avenue, <br>TownSville</p>
+                            <a href="tel:1234567890">Contact:1234567890</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lookbook">
+                    <ul>
+                        <li><a href="#">MEN'S LOOKBOOK</a></li>
+                        <li><a href="#">WOMEN'S LOOKBOOK</a></li>
+                        <li><a href="#">YOUR LOOKBOOK</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Popular-menu -->
+    <div class="popular-menu-main">
+        <div class="container">
+            <hr>
+            <div class="popular-menu">
+                <ul class="tabs">
+                    <li class="tab current" data-tab="tab-1">POPULAR</li>
+                    <li class="tab" data-tab="tab-2">NEW ARRIVALS</li>
+                    <li class="tab" data-tab="tab-3">BEST SELLERS</li>
+                    <li class="tab" data-tab="tab-4">SPECIAL OFFERS</li>
+                    <li class="tab" data-tab="tab-5">COMING SOON</li>
+                </ul>
+                <div id="tab-1" class="tab-content current">
+                    <div class="popular-main">
+                        <div class="pupular left">
+                            <div class="top">
+                                <div class="left">
+                                    <img src="./img/pic1.png" alt="FASHION IMG">
+                                    <div class="text">
+                                        <span>&pound;89.99</span>
+                                    </div>
+                                    <div class="hover">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img src="./img/pic2.png" alt="FASHION IMG">
+                                    <div class="text">
+                                        <span>&pound;47.50</span>
+                                    </div>
+                                    <div class="hover">
+                                        <!-- <i class="fa-solid fa-circle-info"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <img src="./img/pic3.png" alt="FASHION IMG">
+                                <div class="text">
+                                    <span>&pound;69.95</span>
+                                </div>
+                                <div class="hover">
+                                    <!-- <i class="fa-solid fa-circle-info"></i> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="top">
+                                <img src="./img/pic4.png" alt="FASHION IMG">
+                                <div class="text">
+                                    <span>&pound;69.95</span>
+                                </div>
+                                <div class="hover">
+                                    <!-- <i class="fa-solid fa-circle-info"></i> -->
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <img src="./img/pic5.png" alt="FASHION IMG">
+                                    <div class="text">
+                                        <span>&pound;89.99</span>
+                                    </div>
+                                    <div class="hover">
+                                        <!-- <i class="fa-solid fa-circle-info"></i> -->
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img src="./img/pic6.png" alt="FASHION IMG">
+                                    <div class="text">
+                                        <span>&pound;47.50</span>
+                                    </div>
+                                    <div class="hover">
+                                        <!-- <i class="fa-solid fa-circle-info"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-2" class="tab-content">
+                    <div class="popular-main">
+                        <div class="pupular left">
+                            <div class="top">
+                                <div class="left">
+                                    <img src="./img/pic2.png" alt="FASHION IMG">
+                                    <div class="text">
+                                        <span>&pound;89.99</span>
+                                    </div>
+                                    <div class="hover">
+                                        <!-- <i class="fa-solid fa-circle-info"></i> -->
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img src="./img/pic1.png" alt="FASHION IMG">
+                                    <div class="text">
+                                        <span>&pound;47.50</span>
+                                    </div>
+                                    <div class="hover">
+                                        <!-- <i class="fa-solid fa-circle-info"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <img src="./img/pic4.png" alt="FASHION IMG">
+                                <div class="text">
+                                    <span>&pound;69.95</span>
+                                </div>
+                                <div class="hover">
+                                    <!-- <i class="fa-solid fa-circle-info"></i> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="top">
+                                <img src="./img/pic3.png" alt="FASHION IMG">
+                                <div class="text">
+                                    <span>&pound;69.95</span>
+                                </div>
+                                <div class="hover">
+                                    <!-- <i class="fa-solid fa-circle-info"></i> -->
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <img src="./img/pic6.png" alt="FASHION IMG">
+                                    <div class="text">
+                                        <span>&pound;89.99</span>
+                                    </div>
+                                    <div class="hover">
+                                        <!-- <i class="fa-solid fa-circle-info"></i> -->
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <img src="./img/pic5.png" alt="FASHION IMG">
+                                    <div class="text">
+                                        <span>&pound;47.50</span>
+                                    </div>
+                                    <div class="hover">
+                                        <!-- <i class="fa-solid fa-circle-info"></i> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-3" class="tab-content">
+                    <ul>
+                        <li>
+                            <h3>White Shirt-</h3>
+                            <p> Versatile, timeless elegance for any occasion.</p>
+                        </li>
+                        <li>
+                            <h3>Black Blazer-</h3>
+                            <p> Impeccably tailored for office or evening wear.</p>
+                        </li>
+                        <li>
+                            <h3>Denim Jeans-</h3>
+                            <p> Casual sophistication, comfort meets style.</p>
+                        </li>
+                        <li>
+                            <h3>Evening Gown-</h3>
+                            <p> Statement-making elegance for special events.</p>
+                        </li>
+                        <li>
+                            <h3>Crossbody Bag-</h3>
+                            <p> Stylish and functional for on-the-go chic.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="tab-4" class="tab-content">
+                    <h2>SPECIAL OFFERS</h2>
+                    <p>
+                        - "Limited Time Offer: Buy 1, Get 1 Free!" <br>
+                        - "Flash Sale: Up to 50% Off Selected Items!" <br>
+                        - "Exclusive Online Deals: Extra 20% Off with Code 'SPECIAL20'!" <br>
+                        - "Seasonal Clearance: Huge Discounts on Top Brands!" <br>
+                        - "Weekend Special: Buy More, Save More!" <br>
+                        - "First-time Purchase Offer: 10% Off Your Order!"
+                    </p>
+                </div>
+
+                <div id="tab-5" class="tab-content">
+                    <h4>
+                        Welcome to our exclusive sneak peek! At AVENUE FASHION BRAND, we're thrilled to announce that a wave
+                        of captivating fashion is on its way. Our upcoming collection is designed to elevate your style game
+                        to new heights.
+                    </h4>
+                    <br>
+                    <p>
+                        <h5>*Teaser:*</h5>
+                        Discover a fusion of elegance and modernity in our forthcoming line. From chic dresses to
+                        sophisticated suiting, each piece is crafted with precision and flair, tailored to accentuate your
+                        unique fashion statement.
+                    </p> <br>
+                    <h5>*Stay Updated:*</h5>
+                    <p>
+                        Subscribe to our newsletter to be the first to know about the launch date and gain exclusive access
+                        to pre-order options. Get ready to indulge in a world of fashion that defines your individuality.
+                    </p>
+                    <br>
+                    <h4>Feel free to adjust the wording or details to better match your website's brand voice and style.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Lookbook Section -->
+    <div class="lookbook-main">
+        <div class="container">
+            <div class="lookbooks">
+                <div class="lookbook">
+                    <img src="./img/men's-lookbook.png" alt="Loobook">
+                    <div class="lookbook-text">
+                        <h2>MEN'S <br><span>LOOKBOOK</span></h2>
+                        <p>Lorem ipsum dolor sit amet eras facilisis consectetur adipiscing elit lor, integer lorem
+                            consecteur dignissim laciniqui.Elementum metus facilisis ut phasellu.</p>
+                        <!-- <p>Lorem ipsum dolor sit amet eras facilisis<br>consectetur adipiscing elit lor, integer lorem<br> consecteur dignissim laciniqui.<br>Elementum metus facilisis ut phasellu.</p> -->
+                        <a href="#">VIEW NOW</a>
+                    </div>
+                </div>
+                <div class="lookbook">
+                    <img src="./img/women's-lookbook.png" alt="Loobook">
+                    <div class="lookbook-text">
+                        <h2>WOMEN'S <br><span>LOOKBOOK</span></h2>
+                        <p>Pellentesque habitant morbi tristique senec tus et netus et malesuada fames . Pellentesque
+                            laoreet quis enim et mattis.Quisque interdum felis tellus.</p>
+                        <!-- <p>Pellentesque habitant morbi tristique senec<br>tus et netus et malesuada fames .<br> Pellentesque laoreet quis enim et mattis.<br>Quisque interdum felis tellus.</p> -->
+                        <a href="#">VIEW NOW</a>
+                    </div>
+                </div>
+                <div class="lookbook">
+                    <img src="./img/your-lookbook.png" alt="Loobook">
+                    <div class="lookbook-text">
+                        <h2>YOUR <br><span>LOOKBOOK</span></h2>
+                        <p>See an item you like and click the ♥ button to add it to your lookbook where you can create
+                            your own perfect look.It's like your own boutique!</p>
+                        <!-- <p>See an item you like and click the  button<br> to add it to your lookbook where you can <br>create your own perfect look.<br>It's like your own boutique!</p> -->
+                        <a href="#">VIEW NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-main">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="footer-top-first">
+                        <div class="footer-dtl one">
+                            <div class="details">
+                                <h3>INFORMATION</h3>
+                                <ul>
+                                    <li><a href="#">The brand</a></li>
+                                    <li><a href="#">Local stores</a></li>
+                                    <li><a href="#">Customer service</a></li>
+                                    <li><a href="#">Privacy & cookies</a></li>
+                                    <li><a href="#">Site map</a></li>
+                                </ul>
+                            </div>
+                            <div class="details">
+                                <h3>WHY BUY FROM US</h3>
+                                <ul>
+                                    <li><a href="#">Shipping & returns</a></li>
+                                    <li><a href="#">Secure shopping</a></li>
+                                    <li><a href="#">Testimonials</a></li>
+                                    <li><a href="#">Award winning</a></li>
+                                    <li><a href="#">Ethical trading</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-dtl two">
+                            <div class="details">
+                                <h3>YOUR ACCOUNT</h3>
+                                <ul>
+                                    <li><a href="#">Sign in</a></li>
+                                    <li><a href="#">Register</a></li>
+                                    <li><a href="#">View cart</a></li>
+                                    <li><a href="#">View your lookbook</a></li>
+                                    <li><a href="#">Track an order</a></li>
+                                    <li><a href="#">Update information</a></li>
+                                </ul>
+                            </div>
+                            <div class="details">
+                                <h3>LOOKBOOK</h3>
+                                <ul>
+                                    <li><a href="#">Latest posts</a></li>
+                                    <li><a href="#">Men's lookbook</a></li>
+                                    <li><a href="#">Women's lookbook</a></li>
+                                    <li><a href="#">Lookbooks RSS feed</a></li>
+                                    <li><a href="#">View your lookbook</a></li>
+                                    <li><a href="#">Delete your lookbook</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-dtl">
+                            <div class="details">
+                                <h3>CONTACT DETAILS</h3>
+                                <ul>
+                                    <li><a href="#">Head Office: Avenue Fashion,<br>180-182 Regent Street, London.</a>
+                                    </li>
+                                    <li>Telephone: <a href="tel:0123-456-789">0123-456-789</a></li>
+                                    <li>Email: <a href="mailto:support@yourwebsite.com">support@yourwebsite.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-top-second">
+                        <div class="first">
+                            <img src="./img/award-winner.png" alt="Award Winner">
+                        </div>
+                        <div class="second">
+                            <img src="./img/footer-blue-bg.png" alt="">
+                            <div class="social-media">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-bottom-main">
+                        <div class="left">
+                            <span>© 2016 Avenue Fashion™</span>
+                        </div>
+                        <div class="right">
+                            <span>Design by <a href="#">RobbyDesigns.com</a></span>
+                            <span>Dev by <a href="#">Loremipsum.com</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./\/script.js"></script>
+</body>
+
+</html>
